@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 18:45:44 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 15:18:58 by rmamzer          ###   ########.fr       */
+/*   Created: 2025/04/20 11:33:08 by rmamzer           #+#    #+#             */
+/*   Updated: 2025/04/20 14:42:19 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset( void *s,  int c, size_t n)
+// why not 1 while loop --> null if uninitialized char, should be blank, no idea why org behaves like this
+char	*ft_strchr(const char *s, int c)
 {
-	size_t i;
-	unsigned char *ptr;
+	unsigned char chr;
+	unsigned const char	*str;
 
-	ptr = (unsigned char *)s;
-	i = 0;
-	while (i< n)
-	{
-		ptr[i] = (unsigned char)c;
-		i++;
- 	}
-	return(s);
+	chr = (unsigned char)c;
+	str = (unsigned const char *)s;
+	while ( *s && *str != chr)
+		str++;
+	if (*str == chr)
+		return ((char *)str);
+	else
+		return (NULL);
 }
