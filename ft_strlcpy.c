@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 11:12:39 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/18 15:11:47 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:28:08 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	len = ft_strlen(src);
 	i = 0;
-
 	if (size == 0)
 		return (len);
 

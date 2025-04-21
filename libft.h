@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 11:12:32 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 16:02:03 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:28:39 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 //libraries   ----> check libraties order
 #include <unistd.h>
 #include <stdlib.h>
-
-
 
 // mandatory functions
 int	ft_isalpha(int c);

@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:39:05 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/17 19:19:57 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:27:17 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
-
 	while (i < n)
 	{
 		d[i] = s[i];
 		i++;
 	}
-
 return (dest);
 }

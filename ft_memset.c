@@ -6,11 +6,12 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 18:45:44 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 15:18:58 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:27:30 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 
 void	*ft_memset( void *s,  int c, size_t n)
 {

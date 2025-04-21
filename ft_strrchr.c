@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 12:26:40 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 14:27:23 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:28:27 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ char	*ft_strrchr(const char *s, int c)
 
 	while (str[i] != '\0')
 		i++;
-
 	while(i >= 0)
 	{
 		if (str[i] == chr)

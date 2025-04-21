@@ -6,12 +6,12 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 11:33:08 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 14:42:19 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:27:48 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// why not 1 while loop --> null if uninitialized char, should be blank, no idea why org behaves like this
+// why not 1 while loop -->  null if uninitialized char, should be blank, no idea why org behaves like this
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned char chr;

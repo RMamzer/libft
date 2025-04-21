@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 15:08:24 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/20 15:19:54 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 10:26:05 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int ft_atoi(const char *nptr)
 {
+
 	int	sign;
 	int	i;
 	int	num;
