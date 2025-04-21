@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 10:28:34 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 12:52:45 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,15 +78,15 @@ printf ("%s\n", dest);
 // strrchr test || HOW TO TEST WHATS WRONG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*
 	char str1[]= "Ze worldo: Jojo reference";
-	char c;
-	printf("%s\n", ft_strrchr(str1, 97));
+	char c = ' ';
+	printf("%s\n", ft_strrchr(str1, 'o'));
 	printf("%s\n", ft_strrchr(str1, 'e'));
 	printf("%s\n", ft_strrchr(str1, c));
-	printf("%s\n\n", ft_strrchr(str1, '='));
+	printf("%s\n\n", ft_strrchr(str1, '!'));
 	printf("%s\n", strrchr(str1, 'o'));
 	printf("%s\n", strrchr(str1, 'e'));
 	printf("%s\n", strrchr(str1, c));
-	printf("%s\n", strrchr(str1, '='));
+	printf("%s\n", strrchr(str1, '!'));
 */
 
 // ft_strncmp
@@ -121,8 +121,30 @@ printf ("%s\n", dest);
 */
 
 	//atoi test
-	char n[] = "-2147483648";
+	/*
+	char n[] = "2147483648";
 	printf("%d\n", ft_atoi(n));
 	printf("%d\n", atoi(n));
+*/
 
+	// ft_strnstr test
+	/*
+	char haystack[]= "Ze worldo: Jojoo reference of Jojo check";
+	char needle[]= "";
+	printf("%s\n", ft_strnstr(haystack, needle, 40));
+	*/
+
+
+	// calloc test
+/*
+	printf("%s\n", (char*)ft_calloc(5,2));
+	printf("%s\n", (char*)ft_calloc(7,0));
+	printf("%s\n", (char*)ft_calloc(0,7));
+*/
+
+	//strdup test
+	char dup[]= "STEEEEL BAAAAAALL RUUUUUUN";
+	char dup2[]= "";
+	printf("%s\n", ft_strdup(dup));
+	printf("%s\n", ft_strdup(dup2));
 }

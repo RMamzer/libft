@@ -1,28 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 18:45:44 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 12:21:23 by rmamzer          ###   ########.fr       */
+/*   Created: 2025/04/21 10:32:36 by rmamzer           #+#    #+#             */
+/*   Updated: 2025/04/21 10:51:49 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strnstr(  const char *big, const char *little, size_t len)
 {
+	const unsigned char	*to_find;
+	const unsigned char	*str;
 	size_t i;
-	unsigned char *ptr;
+	size_t j;
 
-	ptr = (unsigned char *)s;
+	to_find = (const unsigned char *)little;
+	str = (const unsigned char *)big;
 	i = 0;
-	while (i< n)
+	if (!*to_find)
+		return ((char *)str);
+	while (str[i])
 	{
-		ptr[i] = (unsigned char)c;
+		j = 0;
+		while (str[i + j] == to_find[j] && i + j <len)
+		{
+			j++;
+			if (to_find[j + 1] == '\0')
+			{
+				return ((char *)&str[i]);
+			}
+		}
 		i++;
- 	}
-	return(s);
+	}
+	return (NULL);
 }

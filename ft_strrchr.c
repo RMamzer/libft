@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 12:26:40 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 10:28:27 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 11:13:52 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // not sure how to test
 char	*ft_strrchr(const char *s, int c)
 {
-	/*
+
 	 const char	*ptr;
 
 	 ptr = NULL;
@@ -28,8 +28,8 @@ char	*ft_strrchr(const char *s, int c)
 	if (*s == c)
 		return ((char *)s);
 	return ((char *)ptr);
-	*/
 
+/*
 	unsigned char	chr;
 	unsigned const char	*str;
 	size_t	i;
@@ -47,5 +47,6 @@ char	*ft_strrchr(const char *s, int c)
 		i--;
 	}
 	return (NULL);
+	*/
 }
 
