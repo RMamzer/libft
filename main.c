@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 14:58:35 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 17:17:32 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,5 +158,19 @@ printf ("%s\n", dest);
 	printf("%s\n", ft_substr(origstr, 10, 4));
 	printf("%s\n", ft_substr(origstr, 5, 4));
 	printf("%s\n", ft_substr("", 1, 0));
-}
 */
+
+//strjoin test
+
+// char	join1[] = "Miau miau =";
+// char	join2[] = "Gav gav ";
+// printf("%s\n", ft_strjoin(join1, join2));
+// printf("%s\n", ft_strjoin(join1, ""));
+// printf("%s\n", ft_strjoin("", join2));
+// printf("%s\n", ft_strjoin("", ""));
+
+//strtrim test
+
+
+}
+
