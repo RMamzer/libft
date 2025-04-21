@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 12:52:45 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/21 14:58:35 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,8 +143,20 @@ printf ("%s\n", dest);
 */
 
 	//strdup test
+	/*
 	char dup[]= "STEEEEL BAAAAAALL RUUUUUUN";
 	char dup2[]= "";
 	printf("%s\n", ft_strdup(dup));
 	printf("%s\n", ft_strdup(dup2));
+	*/
+
+//substr test
+/*
+	char origstr[]= "012345";
+	printf("%s\n", ft_substr(origstr, 0, 10));
+	printf("%s\n", ft_substr(origstr, 1, 4));
+	printf("%s\n", ft_substr(origstr, 10, 4));
+	printf("%s\n", ft_substr(origstr, 5, 4));
+	printf("%s\n", ft_substr("", 1, 0));
 }
+*/
