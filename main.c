@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/22 16:35:45 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/22 20:14:42 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -184,9 +184,9 @@ char **splitted = ft_split(split, ' ');
 int i;
 i =0;
 while (splitted[i])
-{
+ {
 	printf ("%s\n", splitted[i]);
 	i++;
-}
+ }
 }
 

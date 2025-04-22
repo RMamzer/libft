@@ -6,9 +6,10 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:42:17 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/22 16:38:43 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/22 20:06:25 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 /*
@@ -20,8 +21,11 @@
 
 static void	*ft_free(char **splitted)
 {
-	while (*splitted)
-		free(*splitted);
+	size_t i;
+
+	i = 0;
+	while (splitted[i])
+		free(splitted[i++]);
 	free(splitted);
 	return (NULL);
 }
@@ -74,6 +78,7 @@ char	**ft_split(char const *s, char c)
 		if (*s != c)
 		{
 			splitted[i]= ft_substr(s, 0, ft_wlen(s,c));
+
 			if (!splitted[i++])
 				return (ft_free(splitted));
 			s += ft_wlen(s,c);
@@ -84,5 +89,3 @@ char	**ft_split(char const *s, char c)
 	splitted[i] = NULL;
 	return (splitted);
 }
-
-
