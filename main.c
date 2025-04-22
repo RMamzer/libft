@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 17:17:32 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/22 16:35:45 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,7 +170,23 @@ printf ("%s\n", dest);
 // printf("%s\n", ft_strjoin("", ""));
 
 //strtrim test
+/*
+char org[] = "abcadeafg";
+char set[] = "a";
+
+printf("%s\n", ft_strtrim(org, set));
+*/
 
 
+//ft_split test
+char split[]= "My name is Jojo";
+char **splitted = ft_split(split, ' ');
+int i;
+i =0;
+while (splitted[i])
+{
+	printf ("%s\n", splitted[i]);
+	i++;
+}
 }
 

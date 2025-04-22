@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 16:20:42 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 17:14:59 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/22 14:24:25 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,17 +54,6 @@ char *ft_strtrim(char const *s1, char const *set)
 	trimmed[i] = '\0';
 	return (trimmed);
 }
-
-
-
-int main (void)
-{
-	char org[] = "abbbbbaa";
-	char set[] = "aaaabbbbb";
-
-	printf("%s\n", ft_strtrim(org, set));
-}
-
 /*
 1. Logic: count how many letters you should have to malloc
 2. malloc them
