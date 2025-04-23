@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/18 10:31:07 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/23 17:14:38 by rmamzer          ###   ########.fr       */
+/*   Created: 2025/04/23 18:11:53 by rmamzer           #+#    #+#             */
+/*   Updated: 2025/04/23 19:08:13 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// Applies the function ’f’ to each character of the
+// string passed as argument, passing its index as
+// the first argument. Each character is passed by
+// address to ’f’ so it can be modified if necessary.
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned const char	*str;
 
-	str = (unsigned const char *)s;
-	while( n > 0)
+	size_t	i;
+
+	i = 0;
+	while (s[i])
 	{
-		if (*str == (unsigned char)c)
-			return ((void *)str);
-		str++;
-		n--;
+		f(i, &s[i]);
+		i++;
 	}
-	return(NULL);
 }
+
+

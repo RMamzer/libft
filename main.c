@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/22 20:14:42 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/23 19:42:08 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,22 @@
 #include <stdio.h>
 #include <string.h>
 
+char ft_mapi(unsigned int i, char c)
+{
+	if (i % 2 == 0)
+	{
+		return (c - 32);
+	}
+	return (c);
+}
+
+void ft_iteri(unsigned int i, char * str)
+{
+	if (i % 2 == 0)
+	{
+		(*str -= 32);
+	}
+}
 int main(void)
 {
 /*
@@ -26,8 +42,9 @@ int main(void)
 	char c = '7';
 
 	printf("%s\n", (unsigned char*)ft_memchr(str, c, 6));
-*/
+	printf("%s\n", (unsigned char*)ft_memchr(str, '3', 6));
 
+*/
 
 //strlcpy test
 /*
@@ -179,14 +196,48 @@ printf("%s\n", ft_strtrim(org, set));
 
 
 //ft_split test
+/*
 char split[]= "My name is Jojo";
 char **splitted = ft_split(split, ' ');
 int i;
 i =0;
-while (splitted[i])
- {
-	printf ("%s\n", splitted[i]);
-	i++;
- }
+ while (splitted[i])
+  {
+ 	printf ("%s\n", splitted[i]);
+ 	i++;
+  }
+*/
+
+//ft_itoa test
+/*
+printf("%s\n", ft_itoa(-123));
+printf("%s\n", ft_itoa(10));
+printf("%s\n", ft_itoa(-9));
+printf("%s\n", ft_itoa(8));
+printf("%s\n", ft_itoa(9));
+printf("%s\n", ft_itoa(111));
+printf("%s\n", ft_itoa(1));
+printf("%s\n", ft_itoa(-1));
+printf("%s\n", ft_itoa(0));
+*/
+
+
+//ft_strmapi -------------------> extra function on top
+/*
+char mapistr[] = "qwertyuiop[]";
+printf("%s\n", ft_strmapi(mapistr, ft_mapi));
+*/
+
+//ft_striteri ---------------------> extra function on top
+/*
+char iteristr[] = "qwertyuiop[]";
+ft_striteri(iteristr, ft_iteri);
+printf("%s\n", iteristr);
+*/
+//ft_putchar_fd test
+/*
+ft_putchar_fd('a', 1);
+ft_putchar_fd('a', 2);
+*/
 }
 

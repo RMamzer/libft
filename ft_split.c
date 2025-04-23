@@ -6,18 +6,12 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:42:17 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/22 20:06:25 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/23 18:10:07 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
-/*
-1. Count words
-2. free function (free all * and then **)
-3. word length
-- CHECK 2 SEPARATORS NEARBY
-*/
 
 static void	*ft_free(char **splitted)
 {
@@ -78,7 +72,6 @@ char	**ft_split(char const *s, char c)
 		if (*s != c)
 		{
 			splitted[i]= ft_substr(s, 0, ft_wlen(s,c));
-
 			if (!splitted[i++])
 				return (ft_free(splitted));
 			s += ft_wlen(s,c);

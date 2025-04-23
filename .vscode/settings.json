@@ -1,5 +1,14 @@
 {
 	"files.associations": {
-		"libft.h": "c"
-	}
+		"libft.h": "c",
+		"chrono": "c",
+		"random": "c",
+		"limits": "c",
+		"string_view": "c"
+	},
+	"cSpell.words": [
+		"smodified",
+		"striteri",
+		"strmapi"
+	]
 }
