@@ -4,7 +4,8 @@
 		"chrono": "c",
 		"random": "c",
 		"limits": "c",
-		"string_view": "c"
+		"string_view": "c",
+		"ft_putendl_fd.C": "cpp"
 	},
 	"cSpell.words": [
 		"smodified",
