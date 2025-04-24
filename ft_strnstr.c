@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 10:32:36 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 12:02:40 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/24 14:06:33 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ char	*ft_strnstr(  const char *big, const char *little, size_t len)
 		j = 0;
 		while (str[i + j] == to_find[j] && i + j <len)
 		{
-			j++;
 			if (to_find[j + 1] == '\0')
 			{
 				return ((char *)&str[i]);
 			}
+			j++;
 		}
 		i++;
 	}

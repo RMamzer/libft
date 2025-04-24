@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 13:02:12 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/24 15:07:18 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,18 +80,19 @@ printf ("%s\n", dest);
 	*/
 
 // strchr test
-/*
-	char str1[]= "Ze worldo: Jojo reference";
-	char c;
-	printf("%s\n", ft_strchr(str1, 'o'));
-	printf("%s\n", ft_strchr(str1, 'e'));
-	printf("%s\n", ft_strchr(str1, c));
-	printf("%s\n\n", ft_strchr(str1, '='));
-	printf("%s\n", strchr(str1, 'o'));
-	printf("%s\n", strchr(str1, 'e'));
-	printf("%s\n", strchr(str1, c));
-	printf("%s\n", strchr(str1, '='));
-*/
+
+	// char str1[]= "Ze worldo: Jojo reference";
+	// char c;
+	// printf("%s\n", ft_strchr(str1, 'o'));
+	// printf("%s\n", ft_strchr(str1, 'e'));
+	// printf("%s\n", ft_strchr(str1, c));
+	// printf("%s\n\n", ft_strchr(str1, '='));
+	// printf("%s\n", strchr(str1, 'o'));
+	// printf("%s\n", strchr(str1, 'e'));
+	// printf("%s\n", strchr(str1, c));
+	// printf("%s\n", strchr(str1, '='));
+	printf("%s\n",ft_strchr("tripouille", 'z'));
+
 
 // strrchr test || HOW TO TEST WHATS WRONG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /*
@@ -106,7 +107,6 @@ printf ("%s\n", dest);
 	printf("%s\n", strrchr(str1, c));
 	printf("%s\n", strrchr(str1, '!'));
 */
-
 // ft_strncmp
 /*
 	char str1[]= "Ze worldo: Jojo";
@@ -139,19 +139,21 @@ printf ("%s\n", dest);
 */
 
 	//atoi test
-	/*
-	char n[] = "2147483648";
+/*
+	char n[] = "-2147483648";
 	printf("%d\n", ft_atoi(n));
 	printf("%d\n", atoi(n));
 */
 
 	// ft_strnstr test
 /*
-	char haystack[]= "Ze worldo: Jojoo reference of Jojo check";
-	char needle[]= "";
+	char haystack[]= "ew world worldo: Jojoo reference of Jojo check";
+	char needle[]= "worldo";
+	printf("%s\n", ft_strnstr(haystack, needle, 20));
+	printf("%s\n", ft_strnstr(haystack, "w", 20));
+	printf("%s\n", ft_strnstr(haystack, "e", 0));
 	printf("%s\n", ft_strnstr(haystack, needle, 0));
 */
-
 	// calloc test
 /*
 	printf("%s\n", (char*)ft_calloc(5,2));
@@ -262,6 +264,7 @@ ft_putendl_fd("",1);
 */
 
 // ft_putnbr_fd test
+/*
 ft_putnbr_fd(1,1);
 printf("\n");
 ft_putnbr_fd(1000,1);
@@ -276,4 +279,5 @@ ft_putnbr_fd(-2147483648,1);
 printf("\n");
 ft_putnbr_fd(2147483647,1);
 printf("\n");
+*/
 }

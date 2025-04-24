@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:11:53 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/23 19:08:13 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/24 17:06:32 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	size_t	i;
 
+	if (!s || !f)
+		return;
 	i = 0;
 	while (s[i])
 	{

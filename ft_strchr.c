@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 11:33:08 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 10:27:48 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/24 15:16:34 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,14 @@ char	*ft_strchr(const char *s, int c)
 
 	chr = (unsigned char)c;
 	str = (unsigned const char *)s;
-	while ( *s && *str != chr)
+
+	while (*str)
+	{
+		if (*str == chr)
+			return ((char*)str);
 		str++;
+	}
 	if (*str == chr)
-		return ((char *)str);
-	else
-		return (NULL);
+		return ((char*)str);
+	return (NULL);
 }

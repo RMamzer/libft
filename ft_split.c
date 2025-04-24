@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:42:17 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/23 18:10:07 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/24 16:03:23 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	splitted = malloc(sizeof(char *) * ft_wcount(s, c) + 1);
+	splitted = malloc(sizeof(char *) * (ft_wcount(s, c) + 1));
 	if (!splitted)
 		return (NULL);
 	i = 0;
