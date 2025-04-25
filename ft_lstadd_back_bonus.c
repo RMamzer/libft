@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:58:21 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/25 19:34:36 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/25 21:25:26 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list *last;
 
-	if (lst == NULL)
+	if (!lst || !new)
 		return;
-
 	if (*lst == NULL)
 	{
 		*lst = new;
