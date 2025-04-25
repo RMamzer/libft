@@ -31,10 +31,18 @@ fclean: clean
 re: fclean all
 
 test: re
-	$(CC) $(CFLAGS) -g main.c libft.a -o test
+	$(CC) $(CFLAGS)  -lbsd main.c libft.a -o test
 	rm -f $(OBJS)
 
 testing:
-	$(CC) $(CFLAGS) -g main.c libft.a -o test
+	$(CC) $(CFLAGS) -lbsd main.c libft.a -o test
+
+axellinette: axellinette.c $(NAME)
+	cc $(CFLAGS) -lbsd $^ -o axel
+	./axel
+	rm axel
+	rm -f $(OBJS)
+
+.SILENT:
 
 .PHONY: all re clean fclean test testing

@@ -5,7 +5,10 @@
 		"random": "c",
 		"limits": "c",
 		"string_view": "c",
-		"ft_putendl_fd.C": "cpp"
+		"ft_putendl_fd.C": "cpp",
+		"unistd.h": "c",
+		"fcntl.h": "c",
+		"limits.h": "c"
 	},
 	"cSpell.words": [
 		"smodified",

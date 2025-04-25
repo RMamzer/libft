@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 19:19:50 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/23 19:34:28 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/25 14:05:27 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+
 	write(fd, &c, 1);
 }

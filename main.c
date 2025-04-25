@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 15:07:18 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/25 16:04:08 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,14 @@ void ft_iteri(unsigned int i, char * str)
 }
 int main(void)
 {
+
+	// char memcmps1[] = "Same";
+	// char memcmps2[] = "Same ...NOT!:)";
+
+	// printf("%d\n", ft_memcmp(memcmps1, memcmps2, 3));
+	// printf("%d\n", memcmp(memcmps1, memcmps2, 3));
+	// printf("%d\n", ft_memcmp("ABC", "abc", 3));
+	// printf("%d\n", memcmp("ABC", "abc", 3));
 /*
 	//mem chr test
 	// How to test if not found?
@@ -91,7 +99,7 @@ printf ("%s\n", dest);
 	// printf("%s\n", strchr(str1, 'e'));
 	// printf("%s\n", strchr(str1, c));
 	// printf("%s\n", strchr(str1, '='));
-	printf("%s\n",ft_strchr("tripouille", 'z'));
+	//printf("%s\n",ft_strchr("tripouille", 'z'));
 
 
 // strrchr test || HOW TO TEST WHATS WRONG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -195,7 +203,7 @@ char set[] = "a";
 
 printf("%s\n", ft_strtrim(org, set));
 */
-
+//printf("%s\n", ft_strtrim("   abc   def   ", " "));
 
 //ft_split test
 /*

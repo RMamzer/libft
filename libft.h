@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 11:12:32 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 12:58:21 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/25 15:55:23 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 //libraries   ----> check libraties order
 #include <unistd.h>
 #include <stdlib.h>
+
+// axel tests - REMOVE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+ #include <stddef.h>
+ #include <stdint.h>
 
 // mandatory functions
 int	ft_isalpha(int c);
