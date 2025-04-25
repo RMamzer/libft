@@ -13,7 +13,11 @@ SRCS = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 
-OBJS =  $(SRCS:.c=.o)
+BONUSSRCS = ft_lstnew.c ft_lstadd_front.c
+
+OBJS = $(SRCS:.c=.o)
+
+BONUSOBJS = $(BONUSSRCS:.c=.o)
 
 all: $(NAME)
 %.o: %.c
@@ -23,12 +27,15 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUSOBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: $(OBJS) $(BONUSOBJS)
+	ar rcs $(NAME) $^
 
 test: re
 	$(CC) $(CFLAGS)  -lbsd main.c libft.a -o test
@@ -42,7 +49,5 @@ axellinette: axellinette.c $(NAME)
 	./axel
 	rm axel
 	rm -f $(OBJS)
-
-.SILENT:
 
 .PHONY: all re clean fclean test testing

@@ -8,7 +8,8 @@
 		"ft_putendl_fd.C": "cpp",
 		"unistd.h": "c",
 		"fcntl.h": "c",
-		"limits.h": "c"
+		"limits.h": "c",
+		"array": "c"
 	},
 	"cSpell.words": [
 		"smodified",
