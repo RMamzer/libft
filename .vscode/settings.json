@@ -9,7 +9,8 @@
 		"unistd.h": "c",
 		"fcntl.h": "c",
 		"limits.h": "c",
-		"array": "c"
+		"array": "c",
+		"sstream": "c"
 	},
 	"cSpell.words": [
 		"smodified",

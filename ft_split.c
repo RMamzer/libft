@@ -6,12 +6,14 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:42:17 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 16:03:23 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/28 14:05:39 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "libft.h"
+
+
 
 static void	*ft_free(char **splitted)
 {
@@ -23,6 +25,8 @@ static void	*ft_free(char **splitted)
 	free(splitted);
 	return (NULL);
 }
+
+
 
 static size_t	ft_wlen(char const *s, char c)
 {

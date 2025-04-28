@@ -75,10 +75,10 @@ static void uppercase_in_place(__attribute__((unused))unsigned int index, char* 
 
 // Increment an integer via a pointer. Used for testing the linked list
 // functions.
-// static void increment_int(void *pointer)
-// {
-// 	*((int*) pointer) += 1;
-// }
+static void increment_int(void *pointer)
+{
+	*((int*) pointer) += 1;
+}
 
 static void test_strlcpy(const char *dst, const char *src, size_t length)
 {
@@ -483,7 +483,7 @@ int main()
 		unlink("temp");
 		close(fd);
 	}
-/*
+
 	SECTION("ft_lstnew");
 	{
 		t_list *node = ft_lstnew((void*) 42);
@@ -506,7 +506,7 @@ int main()
 	SECTION("ft_lstsize");
 	{
 		t_list *list = NULL;
-		ASSERT(ft_lstsize(list) == 0); *) 3);
+		ASSERT(ft_lstsize(list) == 0);
 	}
 
 	SECTION("ft_lstadd_back");
@@ -560,7 +560,7 @@ int main()
 		ft_lstiter(list, increment_int);
 		ASSERT(nodes_visited == 3);
 	}
-*/
+
 	SUMMARY();
 	printf("\nTOTAL: %d/%d tests passed ", total_tested - total_failed, total_tested);
 	printf("%s\n", total_failed == 0 ? GREEN_OK : RED_KO);

@@ -6,16 +6,17 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 13:59:05 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/21 10:28:20 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/28 19:27:11 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
+//Compares the two strings s1 and s2. Returns 0 if same, otherwise positive
+// or negative number
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
+	size_t				i;
 	unsigned const char	*str1;
 	unsigned const char	*str2;
 

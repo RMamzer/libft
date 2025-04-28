@@ -6,27 +6,28 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 11:33:08 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 15:16:34 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/28 19:07:01 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// why not 1 while loop -->  null if uninitialized char, should be blank, no idea why org behaves like this
+
+//returns a pointer to the first occurrence of the character c in the string s.
+//The terminating null byte is considered part of the string,
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char chr;
+	unsigned char		chr;
 	unsigned const char	*str;
 
 	chr = (unsigned char)c;
 	str = (unsigned const char *)s;
-
 	while (*str)
 	{
 		if (*str == chr)
-			return ((char*)str);
+			return ((char *)str);
 		str++;
 	}
 	if (*str == chr)
-		return ((char*)str);
+		return ((char *)str);
 	return (NULL);
 }

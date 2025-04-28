@@ -6,20 +6,20 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 12:26:40 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/24 17:09:32 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/28 19:20:47 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// no need to convert in last if cause it can  only be null terminator
-// not sure how to test
+
+//Returns a pointer to the last occurrence of the character c in the string s
 char	*ft_strrchr(const char *s, int c)
 {
-	 const char	*ptr;
+	const char	*ptr;
 
-	 ptr = NULL;
-	 while (*s)
-	 {
+	ptr = NULL;
+	while (*s)
+	{
 		if ((unsigned char)*s == (unsigned char)c)
 			ptr = s;
 		s++;
@@ -28,4 +28,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return ((char *)ptr);
 }
-

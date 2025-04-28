@@ -42,6 +42,7 @@ bonus: $(OBJS) $(BONUSOBJS)
 test: re
 	$(CC) $(CFLAGS)  -lbsd main.c libft.a -o test
 	rm -f $(OBJS)
+	./test
 
 testing:
 	$(CC) $(CFLAGS) -lbsd main.c libft.a -o test
@@ -52,4 +53,5 @@ axellinette: axellinette.c $(NAME)
 	rm axel
 	rm -f $(OBJS)
 
+.SILENT:
 .PHONY: all re clean fclean test testing
