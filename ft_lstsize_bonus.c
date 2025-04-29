@@ -6,13 +6,13 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:45:16 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/25 21:28:41 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/29 14:44:45 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Counts the number of nodes in the list.
 #include "libft.h"
 
+//Counts the number of nodes in the list.
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

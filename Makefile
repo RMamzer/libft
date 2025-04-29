@@ -39,19 +39,21 @@ re: fclean all
 bonus: $(OBJS) $(BONUSOBJS)
 	ar rcs $(NAME) $^
 
-test: re
+test: re bonus
 	$(CC) $(CFLAGS)  -lbsd main.c libft.a -o test
 	rm -f $(OBJS)
 	./test
 
-testing:
+testing: bonus
 	$(CC) $(CFLAGS) -lbsd main.c libft.a -o test
+	rm -f $(OBJS) $(BONUSOBJS)
+	./test
 
 axellinette: axellinette.c $(NAME)
 	cc $(CFLAGS) -lbsd $^ -o axel
 	./axel
 	rm axel
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUSOBJS)
 
 .SILENT:
 .PHONY: all re clean fclean test testing

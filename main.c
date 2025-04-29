@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/29 13:34:01 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/29 14:33:23 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -429,48 +429,64 @@ int main(void)
 	// printf("%s\n", iteristr);
 
 
+	//--------------------ft_putchar_fd------------------------
+
+	// ft_putchar_fd('a', 1);
+	// printf("\n");
+	// ft_putchar_fd('a', 2);
+	// printf("\n");
 
 
-//ft_putchar_fd test
-/*
-ft_putchar_fd('a', 1);
-ft_putchar_fd('a', 2);
-*/
+	//--------------------ft_putstr_fd------------------------
+
+	// ft_putstr_fd("Ronaldo?\n", 1);
+	// ft_putstr_fd("Ronaldooo!!!!\n", 2);
+	// ft_putstr_fd("", 1);
+	// ft_putstr_fd("", 2);
 
 
 
-//ft_puststr_fd test
-/*
-ft_putstr_fd("Ronaldooo\n", 1);
-ft_putstr_fd("Ronaldooo\n", 2);
-ft_putstr_fd("", 1);
-ft_putstr_fd("", 2);
-*/
 
-//ft_putendl_fd test
-/*
-ft_putendl_fd("Ronaldoo", 1);
-ft_putendl_fd("Ronaldo?", 2);
-ft_putendl_fd("",1);
-ft_putendl_fd("",1);
+//--------------------ft_putendl_fd------------------------
 
-*/
+// ft_putendl_fd("Ronaldo?", 1);
+// ft_putendl_fd("Ronaldooooo!!!!", 2);
+// ft_putendl_fd("",1);
+// ft_putendl_fd("",2);
 
-// ft_putnbr_fd test
-/*
-ft_putnbr_fd(1,1);
-printf("\n");
-ft_putnbr_fd(1000,1);
-printf("\n");
-ft_putnbr_fd(999,1);
-printf("\n");
-ft_putnbr_fd(999,2);
-printf("\n");
-ft_putnbr_fd(0,1);
-printf("\n");
-ft_putnbr_fd(-2147483648,1);
-printf("\n");
-ft_putnbr_fd(2147483647,1);
-printf("\n");
-*/
+
+
+
+//--------------------ft_putnbr_fd------------------------
+
+// ft_putnbr_fd(1,1);
+// printf("\n");
+// ft_putnbr_fd(1000,1);
+// printf("\n");
+// ft_putnbr_fd(999,1);
+// printf("\n");
+// ft_putnbr_fd(999,2);
+// printf("\n");
+// ft_putnbr_fd(0,1);
+// printf("\n");
+// ft_putnbr_fd(-2147483648,1);
+// printf("\n");
+// ft_putnbr_fd(2147483647,1);
+// printf("\n");
+
+
+	//--------------------ft_lstnew------------------------
+
+//	char data[] = "42";
+//	t_list *l =  ft_lstnew(data);
+
+//	if (l)
+//	{
+//		printf("Content: %s\n", (char *) l-> content);
+//		printf("Next: %p\n", (void *) l-> next);
+//	}
+//	else
+//		printf("Failed to allocate");
+//	free(l);
+
 }
