@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/28 21:04:21 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/29 13:34:01 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -333,114 +333,102 @@ int main(void)
 
 
 
+	//--------------------ft_strdup------------------------
 
-/*//ft_itoa test
-
-printf("%s\n", ft_itoa(-123));
-printf("%s\n", ft_itoa(10));
-printf("%s\n", ft_itoa(-9));
-printf("%s\n", ft_itoa(8));
-printf("%s\n", ft_itoa(9));
-printf("%s\n", ft_itoa(111));
-printf("%s\n", ft_itoa(1));
-printf("%s\n", ft_itoa(-1));
-printf("%s\n", ft_itoa(0));
-*/
-
-/*
-
-*/
+	// char dup[]= "STEEEEL BAAAAAALL RUUUUUUN";
+	// char dup2[]= "";
+	// char *dupped1=ft_strdup(dup);
+	// char *dupped2= ft_strdup(dup2);
+	// printf("%s\n", dupped1);
+	// printf("%s\n", dupped2);
 
 
 
-
-	// ft_strnstr test
-/*
-
-*/
-	// calloc test
-/*
-
-*/
-
-	//strdup test
-	/*
-	char dup[]= "STEEEEL BAAAAAALL RUUUUUUN";
-	char dup2[]= "";
-	printf("%s\n", ft_strdup(dup));
-	printf("%s\n", ft_strdup(dup2));
-	*/
-
-//substr test
-/*
-	char origstr[]= "012345";
-	printf("%s\n", ft_substr(origstr, 0, 10));
-	printf("%s\n", ft_substr(origstr, 1, 4));
-	printf("%s\n", ft_substr(origstr, 10, 4));
-	printf("%s\n", ft_substr(origstr, 5, 4));
-	printf("%s\n", ft_substr("", 1, 0));
-*/
-
-//strjoin test
-
-// char	join1[] = "Miau miau =";
-// char	join2[] = "Gav gav ";
-// printf("%s\n", ft_strjoin(join1, join2));
-// printf("%s\n", ft_strjoin(join1, ""));
-// printf("%s\n", ft_strjoin("", join2));
-// printf("%s\n", ft_strjoin("", ""));
-
-//strtrim test
-/*
-char org[] = "abcadeafg";
-char set[] = "a";
-
-printf("%s\n", ft_strtrim(org, set));
-*/
-//printf("%s\n", ft_strtrim("   abc   def   ", " "));
-
-//ft_split test
-/*
-char split[]= "My name is Jojo";
-char **splitted = ft_split(split, ' ');
-int i;
-i =0;
- while (splitted[i])
-  {
- 	printf ("%s\n", splitted[i]);
-	free(splitted[i]);
- 	i++;
-  }
-free(splitted);
-*/
-
-//ft_itoa test
-
-// printf("%s\n", ft_itoa( -2147483648));
-// printf("%s\n", ft_itoa(10));
-// printf("%s\n", ft_itoa(-9));
-// printf("%s\n", ft_itoa(8));
-// printf("%s\n", ft_itoa(9));
-// printf("%s\n", ft_itoa(111));
-// printf("%s\n", ft_itoa(1));
-// printf("%s\n", ft_itoa(-1));
-// printf("%s\n", ft_itoa(0));
+	//--------------------ft_substr------------------------
+	// char origstr[]= "012345";
+	// printf("%s\n", ft_substr(origstr, 0, 10));
+	// printf("%s\n", ft_substr(origstr, 1, 4));
+	// printf("%s\n", ft_substr(origstr, 10, 4));
+	// printf("%s\n", ft_substr(origstr, 5, 4));
+	// printf("%s\n", ft_substr("", 0, 1));
 
 
 
-//ft_strmapi -------------------> extra function on top
-/*
-char mapistr[] = "qwertyuiop[]";
-printf("%s\n", ft_strmapi(mapistr, ft_mapi));
-*/
+
+	//--------------------ft_strjoin------------------------
+
+	// char	join1[] = "Miau miau <";
+	// char	join2[] = " Gav gav ";
+	// printf("%s\n", ft_strjoin(join1, join2));
+	// printf("%s\n", ft_strjoin(join1, join2+4));
+	// printf("%s\n", ft_strjoin(join1, ""));
+	// printf("%s\n", ft_strjoin("", join2));
+	// printf("%s\n", ft_strjoin("", ""));
 
 
-//ft_striteri ---------------------> extra function on top
-/*
-char iteristr[] = "qwertyuiop[]";
-ft_striteri(iteristr, ft_iteri);
-printf("%s\n", iteristr);
-*/
+
+
+
+	//--------------------ft_strtrim------------------------
+
+	// char org[] = "abcadeafanaa";
+	// char set[] = "a";
+	// printf("Should be bcadeafan-->%s\n", ft_strtrim(org, set));
+	// printf("%s\n", ft_strtrim("   abc   def   ", " "));
+
+
+
+
+	//--------------------ft_split------------------------
+
+
+	// char split[]= "My name is Jojo";
+	// char **splitted = ft_split(split, ' ');
+	// int i;
+	// i = 0;
+	// while (splitted[i])
+	// {
+	// 	printf ("%s\n", splitted[i]);
+	// 	free(splitted[i]);
+	// 	i++;
+	// }
+	// free(splitted);
+
+
+
+
+
+	//--------------------ft_itoa------------------------
+
+	// printf("%s\n", ft_itoa(-123));
+	// printf("%s\n", ft_itoa(10));
+	// printf("%s\n", ft_itoa(-9));
+	// printf("%s\n", ft_itoa(8));
+	// printf("%s\n", ft_itoa(9));
+	// printf("%s\n", ft_itoa(111));
+	// printf("%s\n", ft_itoa(1));
+	// printf("%s\n", ft_itoa(-1));
+	// printf("%s\n", ft_itoa(0));
+	// printf("%s\n", ft_itoa(2147483647));
+	// printf("%s\n", ft_itoa(-2147483648));
+
+
+	//--------------------ft_strmapi------------------------
+
+	// char mapistr[] = "qwertyuiop1234567890[]";
+	// printf("%s\n", ft_strmapi(mapistr, ft_mapi));
+
+
+
+
+
+	//--------------------ft_striteri------------------------
+
+	// char iteristr[] = "qwertyuiop[]";
+	// ft_striteri(iteristr, ft_iteri);
+	// printf("%s\n", iteristr);
+
+
 
 
 //ft_putchar_fd test

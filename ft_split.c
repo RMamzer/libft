@@ -6,18 +6,15 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:42:17 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/28 14:05:39 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/29 13:13:51 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
-
 
 static void	*ft_free(char **splitted)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (splitted[i])
@@ -26,14 +23,12 @@ static void	*ft_free(char **splitted)
 	return (NULL);
 }
 
-
-
 static size_t	ft_wlen(char const *s, char c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
-	while (*s && *s != c )
+	while (*s && *s != c)
 	{
 		i++;
 		s++;
@@ -41,13 +36,12 @@ static size_t	ft_wlen(char const *s, char c)
 	return (i);
 }
 
-
 static size_t	ft_wcount(char const *s, char c)
 {
-	size_t count;
+	size_t	count;
 
 	count = 0;
-	while(*s)
+	while (*s)
 	{
 		if (*s != c)
 		{
@@ -75,10 +69,10 @@ char	**ft_split(char const *s, char c)
 	{
 		if (*s != c)
 		{
-			splitted[i]= ft_substr(s, 0, ft_wlen(s,c));
+			splitted[i] = ft_substr(s, 0, ft_wlen(s, c));
 			if (!splitted[i++])
 				return (ft_free(splitted));
-			s += ft_wlen(s,c);
+			s += ft_wlen(s, c);
 		}
 		else
 			s++;
