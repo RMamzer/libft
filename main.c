@@ -6,7 +6,7 @@
 /*   By: rmamzer <rmamzer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 12:38:15 by rmamzer           #+#    #+#             */
-/*   Updated: 2025/04/29 14:33:23 by rmamzer          ###   ########.fr       */
+/*   Updated: 2025/04/30 08:29:01 by rmamzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -325,9 +325,9 @@ int main(void)
 	// while (i < 20)
 	// {
 	// 	if (str[i] == '\0')
-	// 		printf("position %d is null\n", i);
+	// 		printf("pos%d is 0\n", i);
 	// 	else
-	// 		printf("position %d FAIL\n", i);
+	// 		printf("pos%d is NOT 0\n", i);
 	// 	i++;
 	// }
 
